@@ -1,0 +1,137 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Fri May 17 18:24:12 2019
+# Process ID: 10892
+# Current directory: E:/vivado_projects/projectCPU31
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7280 E:\vivado_projects\projectCPU31\projectCPU31.xpr
+# Log file: E:/vivado_projects/projectCPU31/vivado.log
+# Journal file: E:/vivado_projects/projectCPU31\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/vivado_projects/projectCPU31/projectCPU31.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2016.2/data/ip'.
+open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:09 . Memory (MB): peak = 857.961 ; gain = 177.711
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'cpu_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-25] Exported 'E:/vivado_projects/projectCPU31/projectCPU31.sim/sim_1/behav/dist_mem_gen_0.mif'
+INFO: [USF-XSim-25] Exported 'E:/vivado_projects/projectCPU31/projectCPU31.sim/sim_1/behav/lwsw.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/vivado_projects/projectCPU31/projectCPU31.sim/sim_1/behav'
+"xvlog -m64 --relax -prj cpu_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_projects/projectCPU31/projectCPU31.ip_user_files/ipstatic/dist_mem_gen_v8_0_10/simulation/dist_mem_gen_v8_0.v" into library dist_mem_gen_v8_0_10
+INFO: [VRFC 10-311] analyzing module dist_mem_gen_v8_0_10
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_projects/projectCPU31/projectCPU31.srcs/sources_1/ip/dist_mem_gen_0/sim/dist_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dist_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_projects/projectCPU31/projectCPU31.srcs/sources_1/new/cpu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sccomp_dataflow
+INFO: [VRFC 10-311] analyzing module dram
+INFO: [VRFC 10-311] analyzing module cpu
+INFO: [VRFC 10-311] analyzing module ctrl
+INFO: [VRFC 10-311] analyzing module instr_decode
+INFO: [VRFC 10-311] analyzing module pcreg
+INFO: [VRFC 10-311] analyzing module pcreg0
+INFO: [VRFC 10-311] analyzing module D_FF
+INFO: [VRFC 10-311] analyzing module D_FF0
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-311] analyzing module decoder
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-311] analyzing module ext5
+INFO: [VRFC 10-311] analyzing module ext16
+INFO: [VRFC 10-311] analyzing module ext18
+INFO: [VRFC 10-311] analyzing module mux32
+INFO: [VRFC 10-311] analyzing module mux5_1
+INFO: [VRFC 10-311] analyzing module mux5_2
+INFO: [VRFC 10-311] analyzing module npc
+INFO: [VRFC 10-311] analyzing module join_instr
+INFO: [VRFC 10-311] analyzing module add8
+INFO: [VRFC 10-311] analyzing module add
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_projects/projectCPU31/projectCPU31.srcs/sim_1/new/cpu_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_projects/projectCPU31/projectCPU31.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/vivado_projects/projectCPU31/projectCPU31.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto f7850b19ee534a37a34f681bbd3122e0 --debug typical --relax --mt 2 -L dist_mem_gen_v8_0_10 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot cpu_tb_behav xil_defaultlib.cpu_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.instr_decode
+Compiling module xil_defaultlib.ctrl
+Compiling module xil_defaultlib.D_FF
+Compiling module xil_defaultlib.D_FF0
+Compiling module xil_defaultlib.pcreg
+Compiling module xil_defaultlib.decoder
+Compiling module xil_defaultlib.pcreg0
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.ext5
+Compiling module xil_defaultlib.ext16
+Compiling module xil_defaultlib.ext18
+Compiling module xil_defaultlib.mux32
+Compiling module xil_defaultlib.mux5_1
+Compiling module xil_defaultlib.mux5_2
+Compiling module xil_defaultlib.add
+Compiling module xil_defaultlib.add8
+Compiling module xil_defaultlib.join_instr
+Compiling module xil_defaultlib.npc
+Compiling module xil_defaultlib.cpu
+Compiling module dist_mem_gen_v8_0_10.dist_mem_gen_v8_0_10(C_FAMILY="a...
+Compiling module xil_defaultlib.dist_mem_gen_0
+Compiling module xil_defaultlib.dram
+Compiling module xil_defaultlib.sccomp_dataflow
+Compiling module xil_defaultlib.cpu_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot cpu_tb_behav
+
+****** Webtalk v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source E:/vivado_projects/projectCPU31/projectCPU31.sim/sim_1/behav/xsim.dir/cpu_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Fri May 17 18:27:34 2019...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 857.961 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '8' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/vivado_projects/projectCPU31/projectCPU31.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "cpu_tb_behav -key {Behavioral:sim_1:Functional:cpu_tb} -tclbatch {cpu_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source cpu_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 10us
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'cpu_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 10us
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:14 . Memory (MB): peak = 857.961 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 907.332 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri May 17 18:42:15 2019...

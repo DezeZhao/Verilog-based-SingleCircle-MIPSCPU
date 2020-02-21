@@ -1,0 +1,16 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Thu Oct 31 22:37:24 2019
+# Process ID: 900
+# Current directory: E:/vivado_projects/projectCPU31
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent22460 E:\vivado_projects\projectCPU31\projectCPU31.xpr
+# Log file: E:/vivado_projects/projectCPU31/vivado.log
+# Journal file: E:/vivado_projects/projectCPU31\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/vivado_projects/projectCPU31/projectCPU31.xpr
+update_compile_order -fileset sources_1
+remove_files E:/MyFiles/ผฦื้/cpu/coe_test/lwsw.coe
+generate_target Simulation [get_files E:/vivado_projects/projectCPU31/projectCPU31.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.xci]
