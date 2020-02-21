@@ -1,1 +1,1 @@
-# Verilog-based-single-circle-MIPSCPU-31-54-
+# Verilog-based-single-circle-MIPSCPU(31&54)
